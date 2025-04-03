@@ -1,0 +1,31 @@
+.column_container {
+    border: #1a1a1a 2px solid;
+    border-radius: 5px;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    font-weight: bold;
+    flex-direction: column;
+}
+
+.header {
+    background-color: beige;
+    text-align: center;
+    align-content: center;
+    border-bottom: #1a1a1a 2px solid;
+}
+
+.header-text {
+    color: chocolate;
+    padding: 1rem 0;
+}
+
+.list-container {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    overflow: auto;
+    gap: 1rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
