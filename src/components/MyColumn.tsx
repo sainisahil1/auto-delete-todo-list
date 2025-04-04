@@ -4,7 +4,7 @@ import {Item} from "../Item.ts";
 
 interface MyColumnProps {
     title: string,
-    items: Item[],
+    items: Map<string, Item>,
     onClick: () => void
 }
 
@@ -16,7 +16,7 @@ function MyColumn({items, title, onClick}: MyColumnProps) {
             </div>
             <div className="list-container">
                 {
-                    items.map((item: Item) => (
+                    Array.from(items.values()).map((item: Item) => (
                         <Button item={item} onClick={onClick}/>
                     ))
                 }
