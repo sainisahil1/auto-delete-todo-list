@@ -5,7 +5,7 @@ import {Item} from "../Item.ts";
 interface MyColumnProps {
     title: string,
     items: Map<string, Item>,
-    onClick: () => void
+    onClick: (item: Item) => void
 }
 
 function MyColumn({items, title, onClick}: MyColumnProps) {
